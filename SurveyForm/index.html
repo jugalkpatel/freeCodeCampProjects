@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Survey form</title>
+</head>
+
+<body>
+    <div id="main-container">
+        <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <div id="form-div">
+            <form id="survey-form" method="POST">
+
+                <ul>
+                    <li>
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                    </li>   
+
+                    <li>
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                    </li>
+
+                    <li>
+                        <label for="age" id="number-label">Age</label>
+                        <input type="number" name="number" id="number" min="10" max="150" placeholder="Enter Your age"
+                            required>
+                    </li>
+
+                    <li>
+                        <label for="role" id="dropdown-label">Which option best describes your current role ?</label>
+                        <select name="role" id="dropdown">
+                            <option value="" selected="selected" disabled>Select Current Role</option>
+                            <option value="Student">Student</option>
+                            <option value="Full time job">Full Time Job</option>
+                            <option value="Full Time learner">Full Time learner</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="recommendation" class="rc-container">Would you recommend freeCodeCamp to a friend
+                            ?</label>
+
+                        <label class="rc-container" for="definitely">
+                            <input type="radio" id="radio-button" name="recommendation" value="definitely">
+                            <span class="common"></span>
+                            Definitely
+                        </label>
+
+
+                        <label class="rc-container" for="Maybe">
+                            <input type="radio" id="radio-button" name="recommendation" value="Maybe">
+                            <span class="common"></span>
+                            Maybe
+                        </label>
+
+                        <label class="rc-container" for="Not Sure">
+                            <input type="radio" id="radio-button" name="recommendation" value="Not sure">
+                            <span class="common"></span>
+                            Not Sure
+                        </label>
+
+                    </li>
+
+                    <li>
+                        <label for="fav-feature">What is your favourite feature of freeCodeCamp ?</label>
+                        <select name="fav-feature" id="ff-dropdown">
+                            <option value="" selected="selected" disabled>Select an Option</option>
+                            <option value="Challenges">Challenges</option>
+                            <option value="Project">Project</option>
+                            <option value="Community">Community</option>
+                            <option value="Open Source">Open Source</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="improve" class="improved">What Would you like to see improved ?(<p id="sub-text">Check all that apply</p>)</label>
+
+
+                        <label for="improve-plat-1" class="rc-container">
+                            <input type="checkbox" id="check-button" name="improve-plat-1" value="Front-end Projects">
+                            <span class="common"></span>
+                            Front-end Projects
+                        </label>
+
+
+                        <label for="improve-plat-2" class="rc-container">
+                            <input type="checkbox" id="check-button" name="improve-plat-2" value="Back-end Projects">
+                            <span class="common"></span>
+                            Back-end Projects
+                        </label>
+
+                        <label for="improve-plat-3" class="rc-container">
+                            <input type="checkbox" id="check-button" name="improve-plat-3" value="Data Vizualization">
+                            <span class="common"></span>
+                            Data Vizualization
+                        </label>
+
+
+                        <label for="improve-plat-4" class="rc-container">
+                            <input type="checkbox" id="check-button" name="improve-plat-4" value="Challenges">
+                            <span class="common"></span>
+                            Challenges
+                        </label>
+
+
+                        <label for="improve-plat-5" class="rc-container">
+                            <input type="checkbox" id="check-button" name="improve-plat-5"
+                                value="Open Source Community">
+                            <span class="common"></span>
+                            Open Source Community
+                        </label>
+
+
+                        <label for="improve-plat-6" class="rc-container">
+                            <input type="checkbox" id="check-button" name="improve-plat-6" value="Gitter help rooms">
+                            <span class="container"></span>
+                            Gitter help rooms
+                        </label>
+
+
+                        <label for="improve-plat-7" class="rc-container">
+                            <input type="checkbox" id="check-button" name="improve-plat-7" value="Videos">
+                            <span class="container"></span>
+                            Videos
+                        </label>
+
+
+                        <label for="improve-plat-8" class="rc-container">
+                            <input type="checkbox" id="check-button" name="improve-plat-8" value="City meetups">
+                            <span class="container"></span>
+                            City meetups
+                        </label>
+
+
+                        <label for="improve-plat-9" class="rc-container">
+                            <input type="checkbox" id="check-button" name="improve-plat-9" value="Wiki">
+                            <span class="container"></span>
+                            Wiki
+                        </label>
+
+
+                        <label for="inprove-plat-10" class="rc-container">
+                            <input type="checkbox" id="check-button" name="improve-plat-10" value="Forum">
+                            <span class="container"></span>
+                            Forum
+                        </label>
+
+
+                        <label for="improve-plat-11" class="rc-container">
+                            <input type="checkbox" id="check-button" name="improve-plat-11" value="Additional Courses">
+                            <span class="container"></span>
+                            Additional Courses
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="Suggestions">Any Comments or Suggestions?</label>
+                        <textarea id="comment-area" placeholder="Enter Your Comment Here..."></textarea>
+                    </li>
+
+                    <li>
+                        <button type="submit" id="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
